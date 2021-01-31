@@ -9,6 +9,7 @@ void display1(int n)
     printf("%d\n", n % 10);
 }
 
+// Reversed Order
 void display2(int n)
 {
     if (n == 0)
