@@ -1,4 +1,4 @@
-//Generate all substrings
+// Generate all substrings
 
 #include <iostream>
 using namespace std;

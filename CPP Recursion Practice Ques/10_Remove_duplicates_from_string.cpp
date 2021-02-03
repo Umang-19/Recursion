@@ -1,4 +1,4 @@
-//Remove duplicates from a string
+// Remove duplicates from a string
 
 #include <iostream>
 using namespace std;
