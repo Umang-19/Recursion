@@ -11,15 +11,17 @@ void genSubstrng(string s, string ans)
         return;
     }
     char c = s[0];
-    genSubstrng(s.substr(1), ans);
-    genSubstrng(s.substr(1), ans + c);
-    string str1 = to_string((int(c)));
-    genSubstrng(s.substr(1), ans + str1);
+    int code = c;
+    string ros = s.substr(1);
+
+    genSubstrng(ros, ans);
+    genSubstrng(ros, ans + c);
+    genSubstrng(ros, ans + to_string(code));
 }
 
 int main()
 {
-    string str = "AB";
+    string str = "ABC";
     genSubstrng(str, "");
     return 0;
 }

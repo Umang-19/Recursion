@@ -14,9 +14,9 @@ int checkdivby11(int n)
     int diff, s1 = 0, s2 = 0;
     while (n)
     {
-        s1 = n % 10;
+        s1 = s1 + (n % 10);
         n = n / 10;
-        s2 = n % 10;
+        s2 = s2 + (n % 10);
         n = n / 10;
     }
     diff = (s1 > s2) ? (s1 - s2) : (s2 - s1);

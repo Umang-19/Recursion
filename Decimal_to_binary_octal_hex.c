@@ -1,3 +1,5 @@
+// Decimal to Binary , Octal & Hexadecimal
+
 #include <stdio.h>
 
 void convert(int n, int base)
@@ -7,12 +9,12 @@ void convert(int n, int base)
         printf("%d ", n);
         return;
     }
-        
-    convert(n / base , base);
-    if(n % base < 10)
-    printf("%d ", n % base);
-    else 
-    printf("%c", (n%base) - 10 + 'A');
+
+    convert(n / base, base);
+    if (n % base < 10)
+        printf("%d ", n % base);
+    else
+        printf("%c", (n % base) - 10 + 'A');
 }
 
 int main()

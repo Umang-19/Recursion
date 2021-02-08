@@ -9,7 +9,7 @@ string removeDup(string s)
         return "";
 
     char c = s[0];
-    string ans = removeDup(s.substr(1));
+    string ans = removeDup(s.substr(1)); // faith
 
     if (c == ans[0])
     {
